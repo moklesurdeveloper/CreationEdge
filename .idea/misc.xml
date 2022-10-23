@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout-v23/activity_buying_options.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/activity_account__info.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/activity_buying_options.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/activity_enter_shipping_info.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/activity_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/activity_picture_barcode.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/activity_product_view.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/featured_product_box.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/fragment_account.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/fragment_dialog_sign_up.xml" value="0.35260416666666666" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/fragment_home.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/fragment_offline_checkout.xml" value="0.36666666666666664" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/popular_brand_box.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/product_box_item.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/purchase_history_item.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/purshes_history_details.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/review_list_item.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/row_category_list_item.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/row_ordered_product.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/row_products_details_slider.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/row_shipping_address_bottom_dialog_layout.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/row_slider.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/search_option.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/search_product_box.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/sub_category_list_item.xml" value="0.20520833333333333" />
+        <entry key="..\:/AndroidProject/ZamZamDigital/Creation Edge/app/src/main/res/layout/todays_deal_product_box.xml" value="0.20520833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

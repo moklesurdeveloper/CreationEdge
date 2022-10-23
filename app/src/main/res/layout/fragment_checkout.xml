@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/checkout_button"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/off"
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RelativeLayout
+                    android:id="@+id/name_ed_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_name"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space10"
+                        android:layout_marginEnd="@dimen/space10"
+                        android:text="@string/user_name"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:drawablePadding="@dimen/space5"
+                        app:drawableStartCompat="@drawable/ic_location" />
+
+                    <TextView
+                        android:id="@+id/tv_edit_billing_addresses"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/space10"
+                        android:text="@string/edit"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/icon_color"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_billing_address"
+                    android:layout_marginStart="@dimen/space10"
+                    android:layout_marginEnd="@dimen/space10"
+                    android:layout_marginTop="@dimen/space8"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:padding="@dimen/space5"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="@dimen/space8"
+                        android:paddingEnd="8dp"
+                        android:gravity="center"
+                        android:background="@drawable/round_with_colorshape" />
+
+                    <TextView
+                        android:id="@+id/tv_billing_full_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="House: 8/ Block: A/ Lane: 6/ Section: 6/ Mirpur Dhaka"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="@dimen/space5"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="start" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/ds_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dip"
+                    android:layout_marginTop="@dimen/space8"
+                    android:background="@color/main_grey" />
+
+                <RelativeLayout
+                    android:id="@+id/name_shipping_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_shipping_u_name"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/space10"
+                        android:layout_marginEnd="@dimen/space10"
+                        android:text="Ship to the different address"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:textSize="16sp"
+                        android:drawablePadding="@dimen/space5"
+                        app:drawableStartCompat="@drawable/ic_bill" />
+
+                    <TextView
+                        android:id="@+id/tv_edit_shipping_addresses"
+                        android:layout_marginTop="@dimen/space5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/space10"
+                        android:text="@string/edit"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:layout_alignParentEnd="true"
+                        android:textColor="@color/icon_color"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_shipping_address"
+                    android:layout_marginStart="@dimen/space10"
+                    android:layout_marginEnd="@dimen/space10"
+                    android:layout_marginTop="@dimen/space8"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Home"
+                        android:textSize="15sp"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:padding="@dimen/space5"
+                        android:layout_gravity="center_vertical"
+                        android:paddingStart="@dimen/space8"
+                        android:paddingEnd="8dp"
+                        android:gravity="center"
+                        android:background="@drawable/round_with_colorshape" />
+
+                    <TextView
+                        android:id="@+id/tv_full_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="House: 8/ Block: A/ Lane: 6/ Section: 6/ Mirpur Dhaka"
+                        android:textSize="15sp"
+                        android:textColor="@color/black"
+                        android:layout_marginStart="@dimen/space5"
+                        android:textAllCaps="false"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="start" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/space10"
+                    android:layout_marginStart="@dimen/space10"
+                    android:layout_marginEnd="@dimen/space10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imgcall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_call"
+                        android:contentDescription="@string/app_name" />
+
+                    <EditText
+                        android:id="@+id/et_phone"
+                        android:hint="Your phone number"
+                        android:layout_toEndOf="@+id/imgcall"
+                        android:layout_marginStart="@dimen/space8"
+                        android:inputType="phone"
+                        style="@style/login_eT"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/space10"
+                    android:layout_marginStart="@dimen/space10"
+                    android:layout_marginEnd="@dimen/space10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/imgemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_email"
+                        android:contentDescription="@string/app_name" />
+
+                    <EditText
+                        android:id="@+id/et_email"
+                        android:hint="Your email"
+                        android:layout_toEndOf="@+id/imgemail"
+                        android:layout_marginStart="@dimen/space8"
+                        android:inputType="textEmailAddress"
+                        style="@style/login_eT"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1.5dip"
+                    android:layout_marginTop="@dimen/space8"
+                    android:background="@color/main_grey" />
+
+                <TextView
+                    android:layout_marginTop="@dimen/space20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space10"
+                    android:layout_marginEnd="@dimen/space10"
+                    android:text="Payment method"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/sp_shipping"
+                    android:layout_marginTop="@dimen/space10"
+                    style="@style/Widget.AppCompat.Spinner.Underlined"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/roundedbutton"
+                    android:padding="@dimen/space10"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space15"
+                    android:layout_marginEnd="@dimen/space10"
+                    android:theme="@style/Spinner"
+                    android:popupBackground="@color/white" />
+
+                 <LinearLayout
+                     android:id="@+id/layout_payment"
+                     android:layout_marginTop="@dimen/space10"
+                     android:layout_marginStart="@dimen/space20"
+                     android:layout_marginEnd="@dimen/space15"
+                     android:orientation="vertical"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content">
+                     <RelativeLayout
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content">
+                         <TextView
+                             android:id="@+id/merc"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text="Personal Payments No:"
+                             android:gravity="center"
+                             android:textColor="@color/black"
+                             android:textSize="16sp" />
+
+                         <TextView
+                             android:layout_toEndOf="@+id/merc"
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:text=" 01872650280"
+                             android:gravity="center"
+                             android:textColor="@color/com_facebook_blue"
+                             android:textSize="16sp" />
+                     </RelativeLayout>
+
+
+                     <TextView
+                         android:layout_marginTop="@dimen/space10"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="@string/number"
+                         android:gravity="center"
+                         android:textColor="@color/black"
+                         android:textSize="14.5sp"/>
+
+                     <EditText
+                         android:id="@+id/et_payment_number"
+                         android:hint="your account number"
+                         android:inputType="phone"
+                         android:layout_marginTop="@dimen/space5"
+                         style="@style/login_eT" />
+
+                     <TextView
+                         android:layout_marginTop="@dimen/space10"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:text="@string/transaction_id"
+                         android:gravity="center"
+                         android:textColor="@color/black"
+                         android:textSize="14.5sp"/>
+
+                     <EditText
+                         android:id="@+id/et_transaction_id"
+                         android:hint="@string/transaction_id"
+                         android:inputType="text"
+                         android:layout_marginTop="@dimen/space5"
+                         style="@style/login_eT" />
+                 </LinearLayout>
+
+                <TextView
+                    android:layout_marginTop="@dimen/space15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/space10"
+                    android:layout_marginEnd="@dimen/space10"
+                    android:text="Order notes (optional)"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_order_note"
+                    android:hint="Note about your order"
+                    android:layout_marginStart="@dimen/space15"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="@dimen/space5"
+                    android:inputType="text"
+                    style="@style/login_eT"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:id="@+id/checkout_button"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Sub Total"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/sub_total_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@+id/sub_total_amount"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:text="Shipping fee"
+                android:textColor="#000"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/shipping_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/sub_total_amount"
+                android:layout_marginBottom="10dp"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dip"
+            android:background="@color/main_grey" />
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/space2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/total"
+                android:layout_marginTop="@dimen/space5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space5"
+                android:text="Total: "
+                android:layout_centerVertical="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="@dimen/space5"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/total_amount"
+                android:layout_marginTop="@dimen/space5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/total"
+                android:text="1000"
+                android:gravity="start"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/space5"
+                android:textColor="@color/colorPrimary"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_confirm_order_btn"
+                android:layout_marginTop="@dimen/space5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/space5"
+                android:text="@string/confirm_order"
+                android:textStyle="bold"
+                android:paddingTop="@dimen/space8"
+                android:paddingBottom="@dimen/space8"
+                android:paddingStart="@dimen/space15"
+                android:paddingEnd="@dimen/space15"
+                android:background="@drawable/round_with_colorshape"
+                android:gravity="center"
+                android:layout_alignParentEnd="true"
+                android:layout_marginBottom="@dimen/space5"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/item_progress_bar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:elevation="5dp"
+        android:padding="5dp"
+        android:theme="@style/RatingBar" />
+
+</RelativeLayout>

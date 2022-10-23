@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        android:layout_centerHorizontal="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/myimage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic__product_loading"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:id="@+id/btn_shape_click"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:text="Shop Now"
+                android:visibility="gone"
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:paddingStart="@dimen/space12"
+                android:paddingTop="@dimen/space2"
+                android:paddingBottom="@dimen/space2"
+                android:textAllCaps="true"
+                android:gravity="center"
+                android:background="@drawable/round_gray_shape"
+                android:drawableRight="@drawable/ic_check"
+                android:drawablePadding="@dimen/space5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

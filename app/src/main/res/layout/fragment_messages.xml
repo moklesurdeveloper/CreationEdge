@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.fragments.MessagesFragment">
+
+    <RelativeLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/space10"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_22"
+            android:text="Message on Facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="#FFFFFF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/img_fb"
+                android:layout_marginTop="@dimen/space20"
+                android:src="@drawable/fb_img2"
+                android:padding="@dimen/space12"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:background="@drawable/fb_background_style"
+                android:layout_width="@dimen/space150"
+                android:layout_height="@dimen/space150"/>
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/img_fb"
+                android:padding="@dimen/space10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_20"
+                android:layout_marginTop="@dimen/space15"
+                android:gravity="center"
+                android:text="There's a New Way to Message on Facebook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:id="@+id/layout_center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/space15"
+                android:layout_below="@+id/tv_description"
+                android:layout_marginStart="@dimen/space20"
+                android:layout_marginEnd="@dimen/space20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="@dimen/space10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14"
+                    android:gravity="start"
+                    android:text="Chat with friend who use Facebook"
+                    android:drawablePadding="@dimen/space10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:drawableStartCompat="@drawable/ic_notification" />
+
+                <TextView
+                    android:padding="@dimen/space10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14"
+                    android:gravity="start"
+                    android:text="Swipe to reply to message"
+                    android:drawablePadding="@dimen/space10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:drawableStartCompat="@drawable/ic_swipe_reply" />
+
+                <TextView
+                    android:padding="@dimen/space10"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_14"
+                    android:gravity="start"
+                    android:text="Get notification via Messanger"
+                    android:drawablePadding="@dimen/space10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:drawableStartCompat="@drawable/ic_messenger" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_full_description"
+                android:padding="@dimen/space10"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_14"
+                android:layout_below="@+id/layout_center"
+                android:layout_marginTop="@dimen/space40"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/space15"
+                android:layout_marginEnd="@dimen/space15"
+                android:layout_centerHorizontal="true"
+                android:text="@string/message_page_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:id="@+id/view_msg"
+                android:layout_below="@+id/tv_full_description"
+                android:layout_marginTop="@dimen/space25"
+                android:layout_width="match_parent"
+                android:background="@color/grey"
+                android:layout_height="1.5dip"/>
+
+            <RelativeLayout
+                android:id="@+id/layout_continue"
+                android:layout_below="@+id/view_msg"
+                android:layout_width="match_parent"
+                android:background="#0037C1"
+                android:layout_marginTop="@dimen/space25"
+                android:layout_marginEnd="@dimen/space15"
+                android:layout_marginStart="@dimen/space15"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:padding="@dimen/space10"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_marginTop="@dimen/space5"
+                    android:gravity="start"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="Continue"
+                    android:drawablePadding="@dimen/space10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableTint="@color/white"
+                    app:drawableStartCompat="@drawable/ic_messenger" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_not_now"
+                android:padding="@dimen/space10"
+                android:textColor="#0037C1"
+                android:textSize="@dimen/text_size_16"
+                android:layout_below="@+id/layout_continue"
+                android:layout_marginTop="@dimen/space5"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:text="@string/not_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/space25"/>
+
+        </RelativeLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

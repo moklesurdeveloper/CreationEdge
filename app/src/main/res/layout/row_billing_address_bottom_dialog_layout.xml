@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_billing_info"
+        android:layout_marginStart="@dimen/space5"
+        android:layout_marginEnd="@dimen/space5">
+        <RelativeLayout
+            android:id="@+id/saveandcloselayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/img_close"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space10"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_baseline_close_24"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:padding="@dimen/space10"
+                android:text="Billing Address"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_16" />
+
+            <Button
+                android:id="@+id/btn_edit"
+                android:textSize="@dimen/text_size_16"
+                android:textColor="@color/black"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:textAllCaps="false"
+                android:text="@string/bt_edit"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_below="@id/saveandcloselayout"
+            android:id="@+id/layout_b_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/name_edt_user_style">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="start"
+                    android:padding="@dimen/space10"
+                    android:text="First Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space2"
+                android:layout_weight="2"
+                android:background="@drawable/et_edt_user_style">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/et_b_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/grey"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/space10"
+                    android:text="0170000000"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_lname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_b_name"
+            android:layout_marginTop="@dimen/space2"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/location_edt_start_style">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="start"
+                    android:padding="@dimen/space10"
+                    android:text="Last Name"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space2"
+                android:layout_weight="2"
+                android:background="@drawable/et_edt_location_end_style">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/et_lname"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/grey"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/space10"
+                    android:text="1/22020"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_lname"
+            android:layout_marginTop="@dimen/space2"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/location_edt_start_style">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="start"
+                    android:padding="@dimen/space10"
+                    android:text="Phone"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space2"
+                android:layout_weight="2"
+                android:background="@drawable/et_edt_location_end_style">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/grey"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/space10"
+                    android:text="1/22020"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_phone"
+            android:layout_marginTop="@dimen/space2"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/location_edt_start_style">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="start"
+                    android:padding="@dimen/space10"
+                    android:text="Email"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space2"
+                android:layout_weight="2"
+                android:background="@drawable/et_edt_location_end_style">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/et_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/grey"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/space10"
+                    android:text="1/22020"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_b_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_email"
+            android:layout_marginTop="@dimen/space2"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/location_edt_start_style">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="start"
+                    android:padding="@dimen/space10"
+                    android:text="Address"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space2"
+                android:layout_weight="2"
+                android:background="@drawable/et_edt_location_end_style">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/et_b_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/grey"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/space10"
+                    android:text="1/22020"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_b_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_b_address"
+            android:layout_marginTop="@dimen/space2"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/location_edt_start_style">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="start"
+                    android:padding="@dimen/space10"
+                    android:text="State"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space2"
+                android:layout_weight="2"
+                android:background="@drawable/et_edt_location_end_style">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/et_b_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/grey"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/space10"
+                    android:text="1/22020"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_b_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_b_state"
+            android:layout_marginTop="@dimen/space2"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/location_edt_start_style">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="start"
+                    android:padding="@dimen/space10"
+                    android:text="City"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space2"
+                android:layout_weight="2"
+                android:background="@drawable/et_edt_location_end_style">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/et_b_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/grey"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/space10"
+                    android:text="1/22020"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_b_postal_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_b_city"
+            android:layout_marginTop="@dimen/space2"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/location_edt_start_style">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="start"
+                    android:padding="@dimen/space10"
+                    android:text="Postal Code"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space2"
+                android:layout_weight="2"
+                android:background="@drawable/et_edt_location_end_style">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/et_b_postalcode"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/grey"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/space10"
+                    android:text="1/22020"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_b_country"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_b_postal_code"
+            android:layout_marginTop="@dimen/space2"
+            android:weightSum="3">
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/location_edt_start_style">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="start"
+                    android:padding="@dimen/space10"
+                    android:text="Country"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="@dimen/space0"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/space2"
+                android:layout_weight="2"
+                android:background="@drawable/et_edt_location_end_style">
+
+                <EditText
+                    android:enabled="false"
+                    android:id="@+id/et_b_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:backgroundTint="@color/grey"
+                    android:gravity="start"
+                    android:paddingStart="@dimen/space10"
+                    android:text="1/22020"
+                    android:textColor="@color/black"
+                    android:textCursorDrawable="@drawable/color_cursor"
+                    android:textSize="@dimen/text_size_16" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

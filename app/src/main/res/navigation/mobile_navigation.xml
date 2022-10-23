@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.creationedge.android.view.fragments.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_categoris"
+            app:destination="@id/navigation_categoris" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_cart"
+        android:name="com.creationedge.android.view.fragments.CartFragment"
+        android:label="@string/cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_navigation_cart_to_navigation_account"
+            app:destination="@id/navigation_account" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_account"
+        android:name="com.creationedge.android.view.fragments.AccountFragment"
+        android:label="@string/account"
+        tools:layout="@layout/fragment_account" />
+    <fragment
+        android:id="@+id/navigation_message"
+        android:name="com.creationedge.android.view.fragments.FBLiveFragment"
+        android:label="@string/search" >
+        <action
+            android:id="@+id/action_navigation_search_to_navigation_cart"
+            app:destination="@id/navigation_cart" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_categoris"
+        android:name="com.creationedge.android.view.fragments.MessagesFragment"
+        android:label="@string/categories"
+        tools:layout="@layout/fragment_messages" >
+        <action
+            android:id="@+id/action_navigation_categoris_to_navigation_search"
+            app:destination="@id/navigation_message" />
+    </fragment>
+</navigation>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/space10"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/description"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_18" />
+
+        <ImageView
+            android:id="@+id/img_close"
+            android:layout_width="@dimen/space20"
+            android:layout_height="@dimen/space20"
+            android:src="@drawable/ic_close_circle"
+            android:layout_alignParentRight="true" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_below="@+id/img_close"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/space5"
+            android:layout_height="1.5dp"
+            android:background="@color/main_grey"/>
+
+
+        <org.sufficientlysecure.htmltextview.HtmlTextView
+            android:id="@+id/policy"
+            android:layout_below="@+id/view"
+            android:textColor="@color/black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textAppearance="@android:style/TextAppearance.Small" />
+    </RelativeLayout>
+
+
+</androidx.core.widget.NestedScrollView>

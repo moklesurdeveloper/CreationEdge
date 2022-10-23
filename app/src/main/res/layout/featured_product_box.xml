@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/white"
+    android:layout_margin="@dimen/_3sdp"
+    app:cardElevation="@dimen/_3sdp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_2sdp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/layout_img"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp">
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100sdp"
+
+                android:contentDescription="@string/todo"
+                android:src="@drawable/ic__product_loading" />
+
+            <TextView
+                android:id="@+id/tv_price_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="-5dp"
+                android:layout_marginEnd="-3dp"
+                android:background="@drawable/ic_off_background_shape"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9ssp"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/product_discounted_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_img"
+
+            android:layout_toStartOf="@+id/product_price"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/main_grey"
+             />
+
+        <TextView
+            android:id="@+id/product_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="@dimen/space5"
+            android:textSize="@dimen/_12ssp"
+            android:textColor="@color/colorPrimary"
+            />
+
+        <RatingBar
+            android:id="@+id/product_rating"
+            style="@style/Widget.AppCompat.RatingBar.Small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_price"
+            android:layout_centerHorizontal="true"
+            android:clickable="false"
+            android:numStars="5"
+            android:progressBackgroundTint="@color/main_grey"
+            android:progressTint="@color/color_rating"
+            android:rating="2" />
+
+        <TextView
+            android:id="@+id/product_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/product_rating"
+            android:ellipsize="end"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:paddingBottom="@dimen/_5sdp"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="@dimen/_5sdp"
+            android:textColor="@color/main_grey"
+            android:textSize="@dimen/_12ssp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

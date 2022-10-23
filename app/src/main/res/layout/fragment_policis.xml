@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/appbar"
+        layout="@layout/app_bar_layout"/>
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_below="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:background="@color/color_rating"
+        >
+        <LinearLayout
+            android:id="@+id/privacy_layout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/space5"
+                android:textSize="@dimen/text_size_16"
+                android:text="@string/privacy_policy"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:background="@color/color_rating"/>
+            <View
+                android:id="@+id/privacyview"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/termslayout"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:background="@color/color_rating"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="@dimen/space5"
+                android:textSize="@dimen/text_size_16"
+                android:text="@string/term_condition"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                />
+            <View
+                android:visibility="gone"
+                android:id="@+id/termsview"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/colorPrimary"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <WebView
+        android:id="@+id/web_view"
+        android:layout_below="@id/btn_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/space5"
+        />
+    <ProgressBar
+        android:id="@+id/spin_kit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:indeterminateTint="#C52CD5"
+        style="?android:attr/progressBarStyle" />
+
+</RelativeLayout>

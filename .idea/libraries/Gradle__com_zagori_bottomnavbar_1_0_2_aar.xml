@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.zagori:bottomnavbar:1.0.2@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d5c8194b8cacdead5d136ce77950cb0f/jetified-bottomnavbar-1.0.2/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d5c8194b8cacdead5d136ce77950cb0f/jetified-bottomnavbar-1.0.2/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d5c8194b8cacdead5d136ce77950cb0f/jetified-bottomnavbar-1.0.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zagori/bottomnavbar/1.0.2/6974c611a8f53a86ea64cf1052a015c4ff4e8cf8/bottomnavbar-1.0.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
